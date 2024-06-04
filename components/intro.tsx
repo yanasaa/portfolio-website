@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import React from 'react'
-import myPhoto from '@/public/photo.jpg'
+import myPhoto from '@/public/ava.jpg'
 import Link from 'next/link'
 import { BsArrowRight, BsLinkedin } from 'react-icons/bs'
 import { LuHardDriveDownload } from 'react-icons/lu'
@@ -12,7 +12,7 @@ import { useSectionInView } from '@/lib/hooks'
 import { useActiveSectionContext } from '@/context/active-section-context'
 
 export default function Intro() {
-    const { ref } = useSectionInView("Home")
+    const { ref } = useSectionInView("Обо мне")
     const {setActiveSection, setTimeOfLastClick} = useActiveSectionContext()
     
   return (
@@ -29,7 +29,7 @@ export default function Intro() {
                 >
                     <Image src={myPhoto} alt='Yana portrait' width='192' height='192' 
                     quality="95" priority={true} 
-                    className='rounded-full h-24 w-24 object-cover
+                    className='rounded-xl h-240 w-240 object-cover
                     border-[0.35rem] border-white shadow-xl'/>
                  </motion.div>
                  {/* <motion.span className='absolute right-0 bottom-0 text-4xl'
@@ -51,15 +51,15 @@ export default function Intro() {
          animate={{opacity: 1,  y: 0}}
        
         >
-            <span className='font-bold'>Hello, I'm Yana. </span>
-             I'm a
-             <span className='font-bold'> front-end developer </span>
-             with 
-             <span className='font-bold'> 1 year </span>
-             of experience. I enjoy building 
-             <span className='italic'> sites && apps. </span>
-             My focus is 
-             <span className='underline'> React (Next.js)</span>
+            <span className='font-bold'> Здравствуйте! Меня зовут Яна.  </span>
+            Я занимаюсь 
+            <span className='font-bold'> фронтенд-разработкой </span> 
+            уже около
+            <span className='font-bold'> 1 года </span>  
+            и с большим энтузиазмом создаю 
+             <span className='italic'>  веб-сайты и приложения </span>
+             , преимущественно, используя
+             <span className='underline'> React (JS)</span>
         </motion.h1>
         <motion.div className='flex flex-col justify-center items-center sm:flex-row gap-2
         px-4 text-lg font-medium'
@@ -74,11 +74,11 @@ export default function Intro() {
             active:scale-105 transition'
              href="#contact"
              onClick={() => {
-                setActiveSection("Contact");
+                setActiveSection("Контакты");
                 setTimeOfLastClick(Date.now())
              }}
              >
-                Contact me here 
+                Связаться со мной 
                 <BsArrowRight className='opacity-70 group-hover:translate-x-1 transition'/>
             </Link>
 
@@ -86,7 +86,7 @@ export default function Intro() {
             rounded-full outline-none focus:scale-110 hover:scale-110
             active:scale-105 transition borderBlack dark:bg-white/10'
             href="/CV.pdf" download>
-                Download CV 
+                Скачать резюме 
                 <LuHardDriveDownload className='opacity-60 group-hover:translate-y-1 transition'/>
             </a>
 
