@@ -8,7 +8,7 @@ import { experiencesData } from '@/lib/data';
 import { useThemeContext } from '@/context/theme-context';
 
 export default function Experience() {
-    const { ref, inView } = useSectionInView("Experience")
+    const { ref, inView } = useSectionInView("Опыт")
     const { theme } = useThemeContext()
  
   return (

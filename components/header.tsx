@@ -6,7 +6,7 @@ import { links } from '@/lib/data'
 import Link from 'next/link'
 import clsx from 'clsx'
 import { useActiveSectionContext } from '@/context/active-section-context'
-
+import { AiOutlineHome } from "react-icons/ai";
 
 
 export default function Header() {

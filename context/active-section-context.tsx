@@ -18,7 +18,7 @@ export default function ActiveSectionContextProvider({
     children,
 }: ActiveSectionContextProviderProps) {
 
-  const [activeSection, setActiveSection] = useState<SectionName>('Home');
+  const [activeSection, setActiveSection] = useState<SectionName>('Обо мне');
 
   const [timeOfLastClick, setTimeOfLastClick] = useState(0) //disable observer on click
 

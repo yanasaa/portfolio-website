@@ -2,6 +2,7 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
+import { AiOutlineHome } from "react-icons/ai";
 import craftshareImg from "@/public/craftshare.png";
 import pingImg from '@/public/ping.png'
 import cofeeImg from '@/public/coffee.png'
@@ -9,45 +10,53 @@ import cofeeImg from '@/public/coffee.png'
 
 export const links = [
   {
-    name: "Home",
+    name: "Обо мне",
     hash: "#home",
   },
+  // {
+  //   name: "Обо мне",
+  //   hash: "#about",
+  // },
   {
-    name: "About",
-    hash: "#about",
-  },
-  {
-    name: "Projects",
+    name: "Проекты",
     hash: "#projects",
   },
   {
-    name: "Skills",
+    name: "Навыки",
     hash: "#skills",
   },
   {
-    name: "Experience",
+    name: "Опыт",
     hash: "#experience",
   },
   {
-    name: "Contact",
+    name: "Контакты",
     hash: "#contact",
   },
 ] as const;
 
 export const experiencesData = [
   {
+    title: `Курс "JavaScript/DOM/Интерфейсы"`,
+    location: "learn.javascript.ru",
+    description:
+      `курсы по профессиональному JavaScript и смежным технологиям. С теорией, ответами на вопросы, практикой, обратной связью по коду ("code review")`,
+    icon: React.createElement(LuGraduationCap),
+    date: "03.2023 - 05.2023",
+  },
+  {
     title: "qa automation engineer",
     location: "Red Rover School",
     description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
+      "Изучала теорию тестирования программного обеспечения, а также автоматизацию с использованием JavaScript и Cypress. Курировала группу студентов в рамках курса по изучению основ JavaScript",
     icon: React.createElement(LuGraduationCap),
-    date: "2023",
+    date: "08.2023 - 12.2023",
   },
   {
     title: "Front-End Developer",
     location: "Exlab Startup",
     description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of class",
+      "Разработка фронтенд части платформы для ремесленников от идеи до MVP. Верстка, логика, API, архитектура. Ведение отчетности в YouTrack. Работа в команде следуя методологии Scrum",
     icon: React.createElement(CgWorkAlt),
     date: "2023 - present",
   },
@@ -55,7 +64,7 @@ export const experiencesData = [
     title: "Front-End Developer",
     location: "Freelance",
     description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots",
+      "Участие в проекте, связанном с управлением вакансиями, в качестве члена команды разработки. На начальном этапе проекта моя основная задача заключается в верстке.",
     icon: React.createElement(FaReact),
     date: "2023 - present",
   },
@@ -65,41 +74,43 @@ export const projectsData = [
   {
     title: "CraftShare",
     description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
-    tags: ["React", "Ant Design", "SASS", "Redux Toolkit"],
+      "Сайт для ремесленников. Реализован функионал взаимодействия со статьями, личным кабинетом пользователя и другими авторами",
+    tags: ["React", "JS", "Ant Design", "SASS", "Redux Toolkit", "ReactQuill", "JWT"],
     imageUrl: craftshareImg,
+    link: "https://github.com/vsmrnw/CraftShare"
   },
   {
     title: "PingPong",
     description:
-      "Contrary to popular belief, terature from 45 BC, making it over 2000 years old.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "Реализация игры \"Пинг-понг\" с использованием языка JavaScript и элемента Canvas для создания графического интерфейса",
+    tags: ["JavaScript", "HTML5", "Canvas"],
     imageUrl:  pingImg,
+    link: "https://codepen.io/Yana-Saa/pen/abXObLq"
   },
   {
     title: "CoffeeHouse",
     description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "Сайт для кофейни, выполнен в рамках учебного проекта, без использования сторонних библиотек или фреймворков",
+    tags: ["JavaScript", "HTML5", "CSS3", "Pixel Perfect"],
     imageUrl:  cofeeImg,
+    link: "https://github.com/yanasaa/Coffee"
   },
 ] as const;
 
 export const skillsData = [
+  "React",
+  "JavaScript",
   "HTML",
   "CSS",
-  "JavaScript",
   "TypeScript",
-  "React",
   "Next.js",
-  "Node.js",
   "Git",
   "Tailwind",
   "Ant Design",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "Django",
+  "Redux Toolkit",
+  "Formik",
+  "SASS",
   "Framer Motion",
+  "English",
+  "Scrum",
 ] as const;

@@ -9,7 +9,7 @@ import toast from 'react-hot-toast'
 
 
 export default function Contact() {
-    const { ref } = useSectionInView( "Contact", 0.75);
+    const { ref } = useSectionInView( "Контакты", 0.75);
     const formRef =  useRef<HTMLFormElement>(null);
 
   return (
@@ -24,11 +24,11 @@ export default function Contact() {
         once: true,
     }}
     >
-        <SectionHeading >Contact me</SectionHeading>
+        <SectionHeading >Контакты</SectionHeading>
 
-        <p className='text-gray-700 -mt-6 dark:text-white/80 '>Please contact me directly at {" "}
+        <p className='text-gray-700 -mt-6 dark:text-white/80 '>Пожалуйста, свяжитесь со мной напрямую по адресу{" "}
             <a href="mailto:yanasaa@gmail.com" className='underline'>yanasaa@gmail.com</a>
-            {" "} or through this form.
+            {" "}  или через эту форму: 
         </p>
 
         <form className='mt-10 flex flex-col dark:text-black' ref={formRef}
@@ -36,18 +36,18 @@ export default function Contact() {
             const { data, error } = await sendEmail(formData);
 
             if(error) {
-               toast.error("Something went wrong :(")
+               toast.error("Пожалуйста, проверьте Ваш email")
                 return;
             }
 
-            toast.success("Email sent successfully!")
+            toast.success("Письмо успешно отправлено! Я свяжусь с Вами в самое ближайшее время!")
             formRef.current?.reset()
 
         }}>
             <input className='h-14 rounded-lg borderBlack px-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 dark:outline-none transition-all' type="email" 
-            placeholder='Your email' required maxLength={100} name='senderEmail'/>
+            placeholder='Ваш email' required maxLength={100} name='senderEmail'/>
             <textarea className='borderBlack rounded-lg h-52 my-3 p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 dark:outline-none transition-all' 
-            placeholder='Your message...' required maxLength={5000} name='message'/>
+            placeholder='Ваше сообщение...' required maxLength={5000} name='message'/>
             <SubmitBtn />
         </form>
     </motion.section>
