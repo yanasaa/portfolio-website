@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import React from 'react'
-import myPhoto from '@/public/ava.jpg'
+import myPhoto from '@/public/myPhoto.png'
 import Link from 'next/link'
 import { BsArrowRight, BsLinkedin } from 'react-icons/bs'
 import { LuHardDriveDownload } from 'react-icons/lu'
@@ -29,21 +29,8 @@ export default function Intro() {
                 >
                     <Image src={myPhoto} alt='Yana portrait' width='192' height='192' 
                     quality="95" priority={true} 
-                    className='rounded-xl h-240 w-240 object-cover
-                    border-[0.35rem] border-white shadow-xl'/>
+                    className='rounded-xl h-240 w-240 object-cover drop-shadow-[0_35px_35px_rgba(214,62,68,0.3)] '/>
                  </motion.div>
-                 {/* <motion.span className='absolute right-0 bottom-0 text-4xl'
-                 initial={{opacity: 0, scale: 0}}
-                 animate={{opacity: 1, scale:1}}
-                 transition={{
-                    type: 'spring',
-                    stiffness: 125,
-                    delay: 0.1,
-                    duration: 0.7,
-                 }}
-                 >
-                    👋
-                </motion.span> */}
             </div>
         </div>
         <motion.h1 className='mb-10 mt-4 px-4 text-2xl font-medium leading-[1.5] sm:text-4xl' 
@@ -51,15 +38,11 @@ export default function Intro() {
          animate={{opacity: 1,  y: 0}}
        
         >
-            <span className='font-bold'> Здравствуйте! Меня зовут Яна.  </span>
-            Я занимаюсь 
-            <span className='font-bold'> фронтенд-разработкой </span> 
-            уже около
-            <span className='font-bold'> 1 года </span>  
-            и с большим энтузиазмом создаю 
-             <span className='italic'>  веб-сайты и приложения </span>
-             , преимущественно, используя
-             <span className='underline'> React (JS)</span>
+            <span className='font-bold'> Здравствуйте!</span> Меня зовут Яна, я начинающий 
+            <span className='font-bold'> фронтенд-разработчик </span>. Опыт работы у меня небольшой, но я хорошо знакома с 
+            <span className='font-bold'> работой в команде. </span>  
+            Мне нравится создавать <span className='italic'>красивые и удобные интерфейсы. </span>В своих проектах преимущественно использую 
+            <span className='font-bold'> React (JS)</span>
         </motion.h1>
         <motion.div className='flex flex-col justify-center items-center sm:flex-row gap-2
         px-4 text-lg font-medium'
@@ -85,7 +68,7 @@ export default function Intro() {
             <a className='group bg-white px-7 py-3 flex items-center gap-2
             rounded-full outline-none focus:scale-110 hover:scale-110
             active:scale-105 transition borderBlack dark:bg-white/10'
-            href="/CV.pdf" download>
+            href="/Matyushenko_Yana_CV.pdf" download>
                 Скачать резюме 
                 <LuHardDriveDownload className='opacity-60 group-hover:translate-y-1 transition'/>
             </a>

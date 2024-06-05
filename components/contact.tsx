@@ -40,7 +40,7 @@ export default function Contact() {
                 return;
             }
 
-            toast.success("Письмо успешно отправлено! Я свяжусь с Вами в самое ближайшее время!")
+            toast.success("Письмо успешно отправлено!")
             formRef.current?.reset()
 
         }}>
