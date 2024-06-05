@@ -42,7 +42,7 @@ export const experiencesData = [
     description:
       `курсы по профессиональному JavaScript и смежным технологиям. С теорией, ответами на вопросы, практикой, обратной связью по коду ("code review")`,
     icon: React.createElement(LuGraduationCap),
-    date: "03.2023 - 05.2023",
+    date: "март 2023 - май 2023",
   },
   {
     title: "qa automation engineer",
@@ -50,7 +50,7 @@ export const experiencesData = [
     description:
       "Изучала теорию тестирования программного обеспечения, а также автоматизацию с использованием JavaScript и Cypress. Курировала группу студентов в рамках курса по изучению основ JavaScript",
     icon: React.createElement(LuGraduationCap),
-    date: "08.2023 - 12.2023",
+    date: "август 2023 - декабрь 2023",
   },
   {
     title: "Front-End Developer",
@@ -58,15 +58,15 @@ export const experiencesData = [
     description:
       "Разработка фронтенд части платформы для ремесленников от идеи до MVP. Верстка, логика, API, архитектура. Ведение отчетности в YouTrack. Работа в команде следуя методологии Scrum",
     icon: React.createElement(CgWorkAlt),
-    date: "2023 - present",
+    date: "октябрь 2023 - настоящее время",
   },
   {
     title: "Front-End Developer",
     location: "Freelance",
     description:
-      "Участие в проекте, связанном с управлением вакансиями, в качестве члена команды разработки. На начальном этапе проекта моя основная задача заключается в верстке.",
+      "Участие в проекте, связанном с управлением вакансиями, в качестве члена команды разработки. На начальном этапе проекта моя основная задача заключается в верстке. Параллельно я занимаюсь созданием других проектов с целью личного обучения и профессионального развития.",
     icon: React.createElement(FaReact),
-    date: "2023 - present",
+    date: "декабрь 2023 - настоящее время",
   },
 ] as const;
 
